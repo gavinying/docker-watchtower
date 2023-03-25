@@ -36,8 +36,8 @@ dockers:
     goarm: ''
     dockerfile: dockerfiles/Dockerfile
     image_templates:
-      - helloysd/docker-watchtower:amd64-{{ .Version }}
-      - helloysd/docker-watchtower:amd64-latest
+      - helloysd/watchtower:amd64-{{ .Version }}
+      - helloysd/watchtower:amd64-latest
     binaries:
       - watchtower
   - 
@@ -48,8 +48,8 @@ dockers:
     goarm: ''
     dockerfile: dockerfiles/Dockerfile
     image_templates:
-      - helloysd/docker-watchtower:i386-{{ .Version }}
-      - helloysd/docker-watchtower:i386-latest
+      - helloysd/watchtower:i386-{{ .Version }}
+      - helloysd/watchtower:i386-latest
     binaries:
       - watchtower
   - 
@@ -60,8 +60,8 @@ dockers:
     goarm: 6
     dockerfile: dockerfiles/Dockerfile
     image_templates:
-      - helloysd/docker-watchtower:armhf-{{ .Version }}
-      - helloysd/docker-watchtower:armhf-latest
+      - helloysd/watchtower:armhf-{{ .Version }}
+      - helloysd/watchtower:armhf-latest
     binaries:
       - watchtower
   - 
@@ -72,7 +72,7 @@ dockers:
     goarm: ''
     dockerfile: dockerfiles/Dockerfile
     image_templates:
-      - helloysd/docker-watchtower:arm64v8-{{ .Version }}
-      - helloysd/docker-watchtower:arm64v8-latest
+      - helloysd/watchtower:arm64v8-{{ .Version }}
+      - helloysd/watchtower:arm64v8-latest
     binaries:
       - watchtower

@@ -10,17 +10,17 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/containrrr/watchtower/internal/actions"
-	"github.com/containrrr/watchtower/internal/flags"
-	"github.com/containrrr/watchtower/internal/meta"
-	"github.com/containrrr/watchtower/pkg/api"
-	apiMetrics "github.com/containrrr/watchtower/pkg/api/metrics"
-	"github.com/containrrr/watchtower/pkg/api/update"
-	"github.com/containrrr/watchtower/pkg/container"
-	"github.com/containrrr/watchtower/pkg/filters"
-	"github.com/containrrr/watchtower/pkg/metrics"
-	"github.com/containrrr/watchtower/pkg/notifications"
-	t "github.com/containrrr/watchtower/pkg/types"
+	"github.com/helloysd/docker-watchtower/internal/actions"
+	"github.com/helloysd/docker-watchtower/internal/flags"
+	"github.com/helloysd/docker-watchtower/internal/meta"
+	"github.com/helloysd/docker-watchtower/pkg/api"
+	apiMetrics "github.com/helloysd/docker-watchtower/pkg/api/metrics"
+	"github.com/helloysd/docker-watchtower/pkg/api/update"
+	"github.com/helloysd/docker-watchtower/pkg/container"
+	"github.com/helloysd/docker-watchtower/pkg/filters"
+	"github.com/helloysd/docker-watchtower/pkg/metrics"
+	"github.com/helloysd/docker-watchtower/pkg/notifications"
+	t "github.com/helloysd/docker-watchtower/pkg/types"
 	"github.com/robfig/cron"
 	log "github.com/sirupsen/logrus"
 
@@ -50,7 +50,7 @@ func NewRootCommand() *cobra.Command {
 		Short: "Automatically updates running Docker containers",
 		Long: `
 	Watchtower automatically updates running Docker containers whenever a new image is released.
-	More information available at https://github.com/containrrr/watchtower/.
+	More information available at https://github.com/helloysd/docker-watchtower/.
 	`,
 		Run:    Run,
 		PreRun: PreRun,
